@@ -7,7 +7,7 @@ body {font-family: 'Tahoma', sans-serif; margin: 20px; }
     background-image: linear-gradient(to right, #cc2828, rgb(223, 223, 43), white, #281eaa);
     color: black; 
     text-align: center;
-    padding: 20px 0; 
+    padding: 15px 0; 
     font-family: 'Tahoma', sans-serif;
     z-index: 1000;
   }
