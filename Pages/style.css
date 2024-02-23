@@ -1,0 +1,15 @@
+
+#banner {
+        background-image: linear-gradient(to right, #cc2828, rgb(223, 223, 43), white, #281eaa);
+        position: fixed;
+        top: 0;
+         left: 0;
+         width: 100%;
+         color: black; 
+         text-align: center;
+         padding: 10px 0;
+        font-family: 'Tahoma', sans-serif;
+         z-index: 1000;
+  }
+  head {font-family: 'Tahoma', sans-serif;}
+body {font-family: 'Tahoma', sans-serif; margin: 10%; }
