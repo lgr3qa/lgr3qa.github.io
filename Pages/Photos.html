@@ -2,28 +2,43 @@
 <head>
   <link rel="stylesheet" href="style.css">
   <title>In Memory of Alejandro Romulo</title>
-  <style> .horizontal-scroll-gallery {
+  <style> .gallery-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .horizontal-scroll-gallery {
     display: flex;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch; 
-    scrollbar-width: none; 
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
   }
   
   .horizontal-scroll-gallery::-webkit-scrollbar {
-    display: none; 
+    display: none;
   }
   
-  .horizontal-scroll-gallery img {
-    flex: 0 0 auto; 
-    width: 200px; 
-    margin-right: 10px; 
+  .gallery-item {
+    flex: 0 0 auto;
+    width: 200px; /* Adjust based on your images */
+    margin-right: 10px;
   }
   
-  
-  .horizontal-scroll-gallery {
-    border: 1px solid #ccc; 
+  .scroll-btn {
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
     padding: 10px;
-  } </style>
+    margin: 10px;
+    font-size: 18px;
+  }
+  
+  .scroll-btn:hover {
+    background-color: #ccc;
+  }
+  
+   </style>
 </head>
 <body>
   <div id="banner">
@@ -40,39 +55,46 @@
     </div>    
     </div>
   <h2 align="center">Photo Gallery</h2>
+  <div class="gallery-container">
+    <a href="#img1" class="scroll-btn left">&lt;</a>
+    <div class="horizontal-scroll-gallery">
+      <div id="img1" class="gallery-item"><img src="/pictures2/1.jpg" alt="Image 1"></div>
+      <div id="img2" class="gallery-item"><img src="/pictures2/2.jpg" alt="Image 2"></div>
+      <div id="img3" class="gallery-item"><img src="/pictures2/3.jpg" alt="Image 3"></div>
+      <div id="img4" class="gallery-item"><img src="/pictures2/4.jpg" alt="Image 4"></div>
+      <div id="img5" class="gallery-item"><img src="/pictures2/5.jpg" alt="Image 5"></div>
+      <div id="img6" class="gallery-item"><img src="/pictures2/6.jpg" alt="Image 6"></div>
+      <div id="img7" class="gallery-item"><img src="/pictures2/7.jpg" alt="Image 7"></div>
+      <div id="img8" class="gallery-item"><img src="/pictures2/8.jpg" alt="Image 8"></div>
+      <div id="img9" class="gallery-item"><img src="/pictures2/9.jpg" alt="Image 9"></div>
+      <div id="img10" class="gallery-item"><img src="/pictures2/10.jpg" alt="Image 10"></div>
+      <div id="img11" class="gallery-item"><img src="/pictures2/11.jpg" alt="Image 11"></div>
+      <div id="img12" class="gallery-item"><img src="/pictures2/12.jpg" alt="Image 12"></div>
+      <div id="img13" class="gallery-item"><img src="/pictures2/13.jpg" alt="Image 13"></div>
+      <div id="img14" class="gallery-item"><img src="/pictures2/14.jpg" alt="Image 14"></div>
+      <div id="img15" class="gallery-item"><img src="/pictures2/15.jpg" alt="Image 15"></div>
+      <div id="img16" class="gallery-item"><img src="/pictures2/16.jpg" alt="Image 16"></div>
+      <div id="img17" class="gallery-item"><img src="/pictures2/17.jpg" alt="Image 17"></div>
+      <div id="img18" class="gallery-item"><img src="/pictures2/18.jpg" alt="Image 18"></div>
+      <div id="img19" class="gallery-item"><img src="/pictures2/19.jpg" alt="Image 19"></div>
+      <div id="img20" class="gallery-item"><img src="/pictures2/20.jpg" alt="Image 20"></div>
+      <div id="img21" class="gallery-item"><img src="/pictures2/21.jpg" alt="Image 21"></div>
+      <div id="img22" class="gallery-item"><img src="/pictures2/22.jpg" alt="Image 22"></div>
+      <div id="img23" class="gallery-item"><img src="/pictures2/23.jpg" alt="Image 23"></div>
+      <div id="img24" class="gallery-item"><img src="/pictures2/24.jpg" alt="Image 24"></div>
+      <div id="img25" class="gallery-item"><img src="/pictures2/25.jpg" alt="Image 25"></div>
+      <div id="img26" class="gallery-item"><img src="/pictures2/26.jpg" alt="Image 26"></div>
+      <div id="img27" class="gallery-item"><img src="/pictures2/27.jpg" alt="Image 27"></div>
+      <div id="img28" class="gallery-item"><img src="/pictures2/28.jpg" alt="Image 28"></div>
+      <div id="img29" class="gallery-item"><img src="/pictures2/29.jpg" alt="Image 29"></div>
+      <div id="img30" class="gallery-item"><img src="/pictures2/30.jpg" alt="Image 30"></div>
+      <div id="img31" class="gallery-item"><img src="/pictures2/31.jpg" alt="Image 31"></div>
 
-  <div class="horizontal-scroll-gallery">
-    <img src="/pictures2/1.jpg" alt="Image 1" width="25%">
-    <img src="/pictures2/2.jpeg" alt="Image 1" width="25%">
-    <img src="/pictures2/3.jpeg" alt="Image 1" width="25%">
-    <img src="/pictures2/4.jpeg" alt="Image 1" width="25%">
-    <img src="/pictures2/5.jpg" alt="Image 1" width="25%">
-    <img src="/pictures2/6.jpg" alt="Image 1" width="25%">
-    <img src="/pictures2/7.jpg" alt="Image 1" width="25%">
-    <img src="/pictures2/8.jpg" alt="Image 1" width="25%">
-    <img src="/pictures2/9.jpg" alt="Image 1" width="25%">
-    <img src="/pictures2/10.jpeg" alt="Image 1" width="25%">
-    <img src="/pictures2/11.jpg" alt="Image 1" width="25%">
-    <img src="/pictures2/12.jpg" alt="Image 1" width="25%">
-    <img src="/pictures2/13.JPG" alt="Image 1" width="25%">
-    <img src="/pictures2/14.jpg" alt="Image 1" width="25%">
-    <img src="/pictures2/15.jpg" alt="Image 1" width="25%">
-    <img src="/pictures2/16.JPG" alt="Image 1" width="25%">
-    <img src="/pictures2/17.JPG" alt="Image 1" width="25%">
-    <img src="/pictures2/18.JPG" alt="Image 1" width="25%">
-    <img src="/pictures2/19.JPG" alt="Image 1" width="25%">
-    <img src="/pictures2/20.JPG" alt="Image 1" width="25%">
-    <img src="/pictures2/21.JPG" alt="Image 1" width="25%">
-    <img src="/pictures2/22.JPG" alt="Image 1" width="25%">
-    <img src="/pictures2/23.JPG" alt="Image 1" width="25%">
-    <img src="/pictures2/24.JPG" alt="Image 1" width="25%">
-    <img src="/pictures2/25.png" alt="Image 1" width="25%">
-    <img src="/pictures2/26.JPG" alt="Image 1" width="25%">
-    <img src="/pictures2/27.jpg" alt="Image 1" width="25%">
-    <img src="/pictures2/28.png" alt="Image 1" width="25%">
-    <img src="/pictures2/29.jpg" alt="Image 1" width="25%">
-    <img src="/pictures2/30.jpg" alt="Image 1" width="25%">
-    <img src="/pictures2/31.JPG" alt="Image 1" width="25%">
+    </div>
+    <a href="#img31" class="scroll-btn right">&gt;</a>
+  </div>
+  
+ 
 
     
     
