@@ -1,37 +1,67 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>In Memory of Alejandro Romulo</title>
+</head>
+
 <body>
+    <div id="banner">
+        <center>
+            <h1><a href=https://lgr3qa.github.io>In Memory of Alejandro</a></h1>
+        </center>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href=https://lgr3qa.github.io/Pages/About>About</a>
+                <a href=https://lgr3qa.github.io/Pages/TributeVideo>Tribute Video</a>
+                <a href=https://lgr3qa.github.io/Pages/Eulogy_Transcript>Eulogy Transcript </a>
+                <a href=https://lgr3qa.github.io/Pages/PhotoCards>PhotoCards</a>
+                <a href=https://lgr3qa.github.io/Pages/Photos>Photos</a>
+                <a href=https://lgr3qa.github.io/Pages/BoomBoom>Countdown</a>
+            </div>
+        </div>
+    </div>
+    <div id="banner-trigger"></div>
+
     <h1>COUNT DOWN FOR EPIC PICTURE</h1>
 
     <h2>Count Down: <span id="count">10</span></h2>
-    <button onclick="updateCount()">Next</button>
+    <button onclick="updateCount()">Count Down</button>
 
     <script>
-      function updateCount() {
-    var count = parseInt(document.getElementById('count').innerText);
-    count -= 1;
-    
-    if(count <= 0){
-        
-        document.getElementById('count').innerText = "Boom!";
-        showImage(); 
-        alert("I miss you kuya :(")
-    } else {
-        
-        document.getElementById('count').innerText = count;
-    }
-}
+        var initialCount = 10;
+        document.getElementById('count').innerText = initialCount;
 
-function showImage() {
-    var img = document.createElement('img');
-    img.src = '/pictures2/25.png'; 
-    img.alt = 'Unedited photo of LoveDogDro (as seen on the PhotoCard page)'; 
-    document.body.appendChild(img);
-}
+        function updateCount() {
+            var count = parseInt(document.getElementById('count').innerText);
+            count -= 1;
 
-// Initialize the countdown to a starting value
-document.getElementById('count').innerText = 10;
 
+            var intensity = Math.floor(255 * ((initialCount - count) / initialCount));
+            var color = `rgb(${intensity},0,0)`;
+
+
+            document.body.style.backgroundColor = color;
+
+            if (count <= 0) {
+                document.getElementById('count').innerText = "Boom!";
+                showImage();
+                alert("I miss you kuya :(");
+            } else {
+                document.getElementById('count').innerText = count;
+            }
+        }
+
+        function showImage() {
+            var img = document.createElement('img');
+            img.src = '/pictures2/25.png';
+            img.alt = 'Unedited photo of LoveDogDro (as seen on the PhotoCard page)';
+            document.body.appendChild(img);
+        }
     </script>
     <script src="/Pages/script.js"></script>
 </body>
+
 </html>
