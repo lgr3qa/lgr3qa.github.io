@@ -6,19 +6,29 @@
     <button onclick="updateCount()">Next</button>
 
     <script>
-        var i = 10;
-
-        function updateCount() {
+      function updateCount() {
     var count = parseInt(document.getElementById('count').innerText);
     count -= 1;
+    
     if(count <= 0){
-        // Do something special here when the count reaches 0.
-        document.body.style.backgroundColor = "red"; // This will change the background color to red.
-        alert("Boom!"); // Alert message for the user.
-        count = 10; // Reset the count.
+        
+        document.getElementById('count').innerText = "Boom!";
+        showImage(); 
+        alert("I miss you kuya :(")
+    } else {
+        
+        document.getElementById('count').innerText = count;
     }
-    document.getElementById('count').innerText = count;
 }
+
+function showImage() {
+    var img = document.createElement('img');
+    img.src = '/pictures2/25.png'; 
+    img.alt = 'Unedited photo of LoveDogDro (as seen on the PhotoCard page)'; 
+}
+
+// Initialize the countdown to a starting value
+document.getElementById('count').innerText = 10;
 
     </script>
 </body>
