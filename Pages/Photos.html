@@ -1,48 +1,49 @@
-  <html>
+<html>
+
 <head>
   <link rel="stylesheet" href="style.css">
   <title>In Memory of Alejandro Romulo</title>
-  <style> .gallery-container {
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-  }
-  
-  .horizontal-scroll-gallery {
-    display: flex;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-  }
-  
-  .horizontal-scroll-gallery::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .gallery-item {
-    flex: 0 0 auto;
-    width: 200px; /* Adjust based on your images */
-    margin-right: 10px;
-  }
-  
-  .scroll-btn {
-    background-color: #ddd;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    margin: 10px;
-    font-size: 18px;
-  }
-  
-  .scroll-btn:hover {
-    background-color: #ccc;
-  }
-  
-   </style>
+  <style>
+    .gallery-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .horizontal-scroll-gallery {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+    }
+
+    .horizontal-scroll-gallery::-webkit-scrollbar {
+      display: none;
+      /* Hide scrollbar for a cleaner look */
+    }
+
+    .scroll-btn {
+      background-color: #ddd;
+      border: none;
+      cursor: pointer;
+      padding: 10px 15px;
+      margin: 5px;
+    }
+
+    .scroll-btn:hover {
+      background-color: #ccc;
+    }
+
+    img {
+      max-width: 100%;
+      margin: 0 10px;
+    }
+  </style>
 </head>
+
 <body>
   <div id="banner">
-    <center><h1><a href=https://lgr3qa.github.io>In Memory of Alejandro</a></h1></center>
+    <center>
+      <h1><a href=https://lgr3qa.github.io>In Memory of Alejandro</a></h1>
+    </center>
     <div class="dropdown">
       <button class="dropbtn">Menu</button>
       <div class="dropdown-content">
@@ -52,56 +53,220 @@
         <a href=https://lgr3qa.github.io/Pages/PhotoCards>PhotoCards</a>
         <a href=https://lgr3qa.github.io/Pages/Photos>Photos</a>
       </div>
-    </div>    
     </div>
-  <h2 align="center">Photo Gallery</h2>
-  <div class="gallery-container">
-    <a href="#img1" class="scroll-btn left">&lt;</a>
-    <div class="horizontal-scroll-gallery">
-      <div id="img1" class="gallery-item"><img src="/pictures2/1.jpg" alt="Image 1"></div>
-      <div id="img2" class="gallery-item"><img src="/pictures2/2.jpg" alt="Image 2"></div>
-      <div id="img3" class="gallery-item"><img src="/pictures2/3.jpg" alt="Image 3"></div>
-      <div id="img4" class="gallery-item"><img src="/pictures2/4.jpg" alt="Image 4"></div>
-      <div id="img5" class="gallery-item"><img src="/pictures2/5.jpg" alt="Image 5"></div>
-      <div id="img6" class="gallery-item"><img src="/pictures2/6.jpg" alt="Image 6"></div>
-      <div id="img7" class="gallery-item"><img src="/pictures2/7.jpg" alt="Image 7"></div>
-      <div id="img8" class="gallery-item"><img src="/pictures2/8.jpg" alt="Image 8"></div>
-      <div id="img9" class="gallery-item"><img src="/pictures2/9.jpg" alt="Image 9"></div>
-      <div id="img10" class="gallery-item"><img src="/pictures2/10.jpg" alt="Image 10"></div>
-      <div id="img11" class="gallery-item"><img src="/pictures2/11.jpg" alt="Image 11"></div>
-      <div id="img12" class="gallery-item"><img src="/pictures2/12.jpg" alt="Image 12"></div>
-      <div id="img13" class="gallery-item"><img src="/pictures2/13.jpg" alt="Image 13"></div>
-      <div id="img14" class="gallery-item"><img src="/pictures2/14.jpg" alt="Image 14"></div>
-      <div id="img15" class="gallery-item"><img src="/pictures2/15.jpg" alt="Image 15"></div>
-      <div id="img16" class="gallery-item"><img src="/pictures2/16.jpg" alt="Image 16"></div>
-      <div id="img17" class="gallery-item"><img src="/pictures2/17.jpg" alt="Image 17"></div>
-      <div id="img18" class="gallery-item"><img src="/pictures2/18.jpg" alt="Image 18"></div>
-      <div id="img19" class="gallery-item"><img src="/pictures2/19.jpg" alt="Image 19"></div>
-      <div id="img20" class="gallery-item"><img src="/pictures2/20.jpg" alt="Image 20"></div>
-      <div id="img21" class="gallery-item"><img src="/pictures2/21.jpg" alt="Image 21"></div>
-      <div id="img22" class="gallery-item"><img src="/pictures2/22.jpg" alt="Image 22"></div>
-      <div id="img23" class="gallery-item"><img src="/pictures2/23.jpg" alt="Image 23"></div>
-      <div id="img24" class="gallery-item"><img src="/pictures2/24.jpg" alt="Image 24"></div>
-      <div id="img25" class="gallery-item"><img src="/pictures2/25.jpg" alt="Image 25"></div>
-      <div id="img26" class="gallery-item"><img src="/pictures2/26.jpg" alt="Image 26"></div>
-      <div id="img27" class="gallery-item"><img src="/pictures2/27.jpg" alt="Image 27"></div>
-      <div id="img28" class="gallery-item"><img src="/pictures2/28.jpg" alt="Image 28"></div>
-      <div id="img29" class="gallery-item"><img src="/pictures2/29.jpg" alt="Image 29"></div>
-      <div id="img30" class="gallery-item"><img src="/pictures2/30.jpg" alt="Image 30"></div>
-      <div id="img31" class="gallery-item"><img src="/pictures2/31.jpg" alt="Image 31"></div>
-
-    </div>
-    <a href="#img31" class="scroll-btn right">&gt;</a>
   </div>
   
- 
+
+
+  
+  <div class="slideshow-container">
 
     
+
+    <div class="mySlides fade">
+      <div class="numbertext"> 1/ 31</div>
+      <img src="/pictures2/1.jpg" style="width:100%">
+      
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"> 2/ 31</div>
+      <img src="/pictures2/2.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 3/ 31</div>
+      <img src="/pictures2/3.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 4/ 31</div>
+      <img src="/pictures2/4.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 5/ 31</div>
+      <img src="/pictures2/5.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 6/ 31</div>
+      <img src="/pictures2/6.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 7/ 31</div>
+      <img src="/pictures2/7.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 8/ 31</div>
+      <img src="/pictures2/8.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 9/ 31</div>
+      <img src="/pictures2/9.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 10/ 31</div>
+      <img src="/pictures2/10.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 11/ 31</div>
+      <img src="/pictures2/11.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 12/ 31</div>
+      <img src="/pictures2/12.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 13/ 31</div>
+      <img src="/pictures2/13.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 14/ 31</div>
+      <img src="/pictures2/14.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 15/ 31</div>
+      <img src="/pictures2/15.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 16/ 31</div>
+      <img src="/pictures2/16.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 17/ 31</div>
+      <img src="/pictures2/17.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 18/ 31</div>
+      <img src="/pictures2/18.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 19/ 31</div>
+      <img src="/pictures2/19.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 20/ 31</div>
+      <img src="/pictures2/20.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 21/ 31</div>
+      <img src="/pictures2/21.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 22/ 31</div>
+      <img src="/pictures2/22.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 23/ 31</div>
+      <img src="/pictures2/23.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 24/ 31</div>
+      <img src="/pictures2/24.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 25/ 31</div>
+      <img src="/pictures2/25.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 26/ 31</div>
+      <img src="/pictures2/26.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 27/ 31</div>
+      <img src="/pictures2/27.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 28/ 31</div>
+      <img src="/pictures2/28.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 29/ 31</div>
+      <img src="/pictures2/29.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 30/ 31</div>
+      <img src="/pictures2/30.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"> 31/ 31</div>
+      <img src="/pictures2/31.jpg" style="width:100%">
+      
+    </div>
+
     
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+ 
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+    <span class="dot" onclick="currentSlide(10)"></span>
+    <span class="dot" onclick="currentSlide(11)"></span>
+    <span class="dot" onclick="currentSlide(12)"></span>
+    <span class="dot" onclick="currentSlide(13)"></span>
+    <span class="dot" onclick="currentSlide(14)"></span>
+    <span class="dot" onclick="currentSlide(15)"></span>
+    <span class="dot" onclick="currentSlide(16)"></span>
+    <span class="dot" onclick="currentSlide(17)"></span>
+    <span class="dot" onclick="currentSlide(18)"></span>
+    <span class="dot" onclick="currentSlide(19)"></span>
+    <span class="dot" onclick="currentSlide(20)"></span>
+    <span class="dot" onclick="currentSlide(21)"></span>
+    <span class="dot" onclick="currentSlide(22)"></span>
+    <span class="dot" onclick="currentSlide(23)"></span>
+    <span class="dot" onclick="currentSlide(24)"></span>
+    <span class="dot" onclick="currentSlide(25)"></span>
+    <span class="dot" onclick="currentSlide(26)"></span>
+    <span class="dot" onclick="currentSlide(27)"></span>
+    <span class="dot" onclick="currentSlide(28)"></span>
+    <span class="dot" onclick="currentSlide(29)"></span>
+    <span class="dot" onclick="currentSlide(30)"></span>
+    <span class="dot" onclick="currentSlide(31)"></span>
   </div>
 
-  </div> </center>
-  <p> These are just some random photos that I had of my brother. I hope they are fun and nice to look at :p</p>
+  </div>
 
-</body>  
+  </div>
+  </center>
+  <p> These are just some random photos that I had of my brother. I hope they are fun and nice to look at :p</p>
+<script src="/Pages/script.js"></script>
+</body>
+
 </html>
