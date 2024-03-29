@@ -1,8 +1,12 @@
 
 #banner {
         background-image: linear-gradient(to right, #cc2828, rgb(223, 223, 43), white, #281eaa);
-        position: relative;
+        position: fixed;
         transition: top .5s ease-in-out;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
          color: black; 
          text-align: center;
         font-family: 'Tahoma', sans-serif;
@@ -12,6 +16,16 @@ body {font-family: 'Tahoma', sans-serif; margin: 10%; }
 
 .banner-hidden{
   top: -80%;
+}
+
+#banner-trigger{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1001;
+  height: 10px;
+  opacity: 0;
 }
 
 .dropbtn {
