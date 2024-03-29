@@ -65,7 +65,7 @@ body {font-family: 'Tahoma', sans-serif; margin: 10%; }
 
 
 .slideshow-container {
-  max-width: 3000px;
+  max-width: 2000px;
   position: relative;
   margin: auto;
 }
@@ -128,7 +128,7 @@ body {font-family: 'Tahoma', sans-serif; margin: 10%; }
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #837a7a;
+  background-color: #332d2d;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
