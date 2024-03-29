@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>In Memory of Alejandro Romulo</title>
+</head>
+
+<body>
+    <div id="banner">
+        <center>
+            <h1><a href=https://lgr3qa.github.io>In Memory of Alejandro</a></h1>
+        </center>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href=https://lgr3qa.github.io/Pages/About>About</a>
+                <a href=https://lgr3qa.github.io/Pages/TributeVideo>Tribute Video</a>
+                <a href=https://lgr3qa.github.io/Pages/Eulogy_Transcript>Eulogy Transcript </a>
+                <a href=https://lgr3qa.github.io/Pages/PhotoCards>PhotoCards</a>
+                <a href=https://lgr3qa.github.io/Pages/Photos>Photos</a>
+            </div>
+        </div>
+    </div>
+    <h2 align="center">PhotoCarousel</h2>
+    <img id="carouselImage" src="image1.jpg" alt="Image Carousel">
+    <button onclick="showPreviousImage()">Previous</button>
+    <button onclick="showNextImage()">Next</button>
+
+
+</body>
+<script>var images = [
+        'lgr3qa/lgr3qa.github.io/pictures2/1.jpg',
+        'lgr3qa/lgr3qa.github.io/pictures2/2.jpeg',
+        'lgr3qa/lgr3qa.github.io/pictures2/3.jpeg',
+        'lgr3qa/lgr3qa.github.io/pictures2/4.jpeg',
+        'lgr3qa/lgr3qa.github.io/pictures2/5.jpg',
+        'lgr3qa/lgr3qa.github.io/pictures2/6.jpg',
+        'lgr3qa/lgr3qa.github.io/pictures2/7.jpg',
+        'lgr3qa/lgr3qa.github.io/pictures2/8.jpg',
+        'lgr3qa/lgr3qa.github.io/pictures2/9.jpg',
+        'lgr3qa/lgr3qa.github.io/pictures2/10.jpeg',
+        'lgr3qa/lgr3qa.github.io/pictures2/11.jpg',
+        'lgr3qa/lgr3qa.github.io/pictures2/12.jpg',
+        'lgr3qa/lgr3qa.github.io/pictures2/13.JPG',
+        'lgr3qa/lgr3qa.github.io/pictures2/14.jpg',
+        'lgr3qa/lgr3qa.github.io/pictures2/15.jpg',
+        'lgr3qa/lgr3qa.github.io/pictures2/16.JPG',
+        'lgr3qa/lgr3qa.github.io/pictures2/17.JPG',
+        'lgr3qa/lgr3qa.github.io/pictures2/18.JPG',
+        'lgr3qa/lgr3qa.github.io/pictures2/19.JPG',
+        'lgr3qa/lgr3qa.github.io/pictures2/20.JPG',
+        'lgr3qa/lgr3qa.github.io/pictures2/21.JPG',
+        'lgr3qa/lgr3qa.github.io/pictures2/22.JPG',
+        'lgr3qa/lgr3qa.github.io/pictures2/23.JPG',
+        'lgr3qa/lgr3qa.github.io/pictures2/24.JPG',
+        'lgr3qa/lgr3qa.github.io/pictures2/25.png',
+        'lgr3qa/lgr3qa.github.io/pictures2/26.JPG',
+        'lgr3qa/lgr3qa.github.io/pictures2/27.jpg',
+        'lgr3qa/lgr3qa.github.io/pictures2/28.png',
+        'lgr3qa/lgr3qa.github.io/pictures2/29.jpg',
+        'lgr3qa/lgr3qa.github.io/pictures2/30.jpg',
+        'lgr3qa/lgr3qa.github.io/pictures2/31.JPG',
+    ];
+    var currentIndex = 0;
+
+    function showNextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        document.getElementById('carouselImage').src = images[currentIndex];
+    }
+
+    function showPreviousImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        document.getElementById('carouselImage').src = images[currentIndex];
+    }
+</script>
+
+</html>
