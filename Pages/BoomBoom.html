@@ -64,7 +64,12 @@
             alert("I miss you kuya :(");
 
         }
-
+        function toggleCountdown() {
+            var countElement = document.getElementById('count');
+            var buttonElement = document.querySelector('button[onclick="updateCount()"]');
+            countElement.style.display = countElement.style.display === 'none' ? 'inline' : 'none';
+            buttonElement.style.display = buttonElement.style.display === 'none' ? 'inline-block' : 'none';
+        }
         function showImage() {
             var img = document.createElement('img');
             img.src = '/pictures2/25.png';
