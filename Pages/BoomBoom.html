@@ -29,6 +29,9 @@
 
     <h2>Count Down: <span id="count">10</span></h2>
     <button onclick="updateCount()">Count Down</button>
+    <button onclick="toggleCountdown()">Toggle Countdown</button>
+    <button onclick="instantDetonate()">Instant Detonation</button>
+    <button onclick="reverseDamage()">Reverse the Damage</button>
 
     <script>
         var initialCount = 10;
@@ -39,8 +42,8 @@
             count -= 1;
 
 
-            var intensity = Math.floor(255 * ((initialCount - count) / initialCount));
-            var color = `rgb(${intensity},0,0)`;
+            var intensity = Math.floor(255 * ((1 - count) / initialCount));
+            var color = `rgb(${intensity},${255 - intensity},${255 - intensity})`;
 
 
             document.body.style.backgroundColor = color;
@@ -54,12 +57,29 @@
             }
         }
 
+        function instantDetonate() {
+            document.getElementById('count').innerText = "Boom!";
+            document.body.style.backgroundColor = 'rgb(255, 0, 0)';
+            showImage();
+            alert("I miss you kuya :(");
+
+        }
+
         function showImage() {
             var img = document.createElement('img');
             img.src = '/pictures2/25.png';
             img.alt = 'Unedited photo of LoveDogDro (as seen on the PhotoCard page)';
             document.body.appendChild(img);
         }
+        function reverseDamage() {
+            document.getElementById('count').innerText = initialCount;
+            var images = document.getElementsByTagName('img');
+            while (images.length > 0) {
+                images[0].parentNode.removeChild(images[0]);
+            }
+            document.body.style.backgroundColor = 'rgb(255, 255, 255)';
+        }
+
     </script>
     <script src="/Pages/script.js"></script>
 </body>
