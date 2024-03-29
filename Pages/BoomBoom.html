@@ -42,8 +42,9 @@
             count -= 1;
 
 
-            var intensity = Math.floor(255 * (1 - count / initialCount));
-            var color = `rgb(${intensity},${255 - intensity},${255 - intensity})`;
+            var redIntensity = 255;
+            var greenBlueIntensity = Math.floor(255 * (count / initialCount));
+            var color = `rgb(${redIntensity}, ${greenBlueIntensity}, ${greenBlueIntensity})`;
 
 
             document.body.style.backgroundColor = color;
