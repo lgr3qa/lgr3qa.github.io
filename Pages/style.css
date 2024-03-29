@@ -1,7 +1,8 @@
 
 #banner {
         background-image: linear-gradient(to right, #cc2828, rgb(223, 223, 43), white, #281eaa);
-        position: fixed;
+        position: relative;
+        transition: top .5s ease-in-out;
         top: 0;
          left: 0;
          width: 100%;
@@ -13,6 +14,10 @@
   }
   head {font-family: 'Tahoma', sans-serif;}
 body {font-family: 'Tahoma', sans-serif; margin: 10%; }
+
+.banner-hidden{
+  top: -80%;
+}
 
 .dropbtn {
   background-color: #ff0000;
@@ -115,8 +120,8 @@ body {font-family: 'Tahoma', sans-serif; margin: 10%; }
 
 
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
+  color: #ca1010;
+  font-size: 10.5px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
@@ -128,14 +133,14 @@ body {font-family: 'Tahoma', sans-serif; margin: 10%; }
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #ffffff;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #221818;
+  background-color: #000000;
 }
 
 

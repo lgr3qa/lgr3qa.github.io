@@ -26,3 +26,32 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+
+var banner = document.getElementById('banner');
+var timeout;
+
+
+function hideBanner() {
+  banner.classList.add('banner-hidden');
+}
+
+
+function resetTimer() {
+  
+  banner.classList.remove('banner-hidden');
+  
+  
+  clearTimeout(timeout);
+
+  
+  timeout = setTimeout(hideBanner, 5000); 
+}
+
+
+banner.addEventListener('mouseover', resetTimer);
+banner.addEventListener('click', resetTimer);
+banner.addEventListener('mouseout', resetTimer);
+
+
+resetTimer();
