@@ -42,7 +42,7 @@
             count -= 1;
 
 
-            var intensity = Math.floor(255 * ((1 - count) / initialCount));
+            var intensity = Math.floor(255 * (1 - count / initialCount));
             var color = `rgb(${intensity},${255 - intensity},${255 - intensity})`;
 
 
