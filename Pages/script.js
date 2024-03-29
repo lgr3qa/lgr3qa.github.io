@@ -45,7 +45,7 @@ function resetTimer() {
   clearTimeout(timeout);
 
   
-  timeout = setTimeout(hideBanner, 5000); 
+  timeout = setTimeout(hideBanner, 50); 
 }
 
 
