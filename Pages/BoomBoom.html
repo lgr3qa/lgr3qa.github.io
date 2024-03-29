@@ -1,0 +1,25 @@
+<html>
+<body>
+    <h1>COUNT DOWN FOR EPIC PICTURE</h1>
+
+    <h2>Count Down: <span id="count">10</span></h2>
+    <button onclick="updateCount()">Next</button>
+
+    <script>
+        var i = 10;
+
+        function updateCount() {
+    var count = parseInt(document.getElementById('count').innerText);
+    count -= 1;
+    if(count <= 0){
+        // Do something special here when the count reaches 0.
+        document.body.style.backgroundColor = "red"; // This will change the background color to red.
+        alert("Boom!"); // Alert message for the user.
+        count = 10; // Reset the count.
+    }
+    document.getElementById('count').innerText = count;
+}
+
+    </script>
+</body>
+</html>
